@@ -3,6 +3,8 @@ version: '0.3.0'
 config-version: 2
 require-dbt-version: [">=0.20.0"]
 vars:
+  google_ads_schema: google_ads_demo
+  google_ads_database: pc_fivetran_db
   google_ads_source:
     google_ads__final_url_performance: "{{ source('adwords','final_url_performance') }}"
     google_ads__click_performance: "{{ source('adwords','click_performance') }}"
